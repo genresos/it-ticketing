@@ -124,12 +124,6 @@ const TableCurrentIssue = ({ data }: Props) => {
         footer: (props) => props.column.id,
       },
       {
-        accessorKey: "project_code",
-        header: () => "Project Code",
-        cell: (info) => <Text fontSize="sm">{info.getValue()}</Text>,
-        footer: (props) => props.column.id,
-      },
-      {
         accessorKey: "assigned_to",
         header: () => "Assign",
         cell: (info) => <Text fontSize="sm">{info.getValue()}</Text>,

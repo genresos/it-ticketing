@@ -34,7 +34,7 @@ const LogoAdw = ({ ...rest }: BoxProps) => {
           mr={{ base: "6px", md: "10px" }}
         />
         <Text fontSize={{ base: "sm", md: "md" }} mt="3px">
-          ICT TICKETING SYSTEM
+          IT TICKETING SYSTEM
         </Text>
       </Link>
     </Box>

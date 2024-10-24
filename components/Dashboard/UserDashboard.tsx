@@ -36,7 +36,7 @@ const UserDashboard = () => {
           {userData.name}
         </Text>
         <Text color={"gray.500"}>
-          Welcome to ICT Ticketing System, would you like to
+          Welcome to IT Ticketing System, would you like to
         </Text>
         <Text color={"gray.500"} mb={6}>
           report an issue now?

@@ -109,7 +109,7 @@ const Dashboard = ({
             </Card>
           </Box>
           <Box mt={20} mb={10}>
-            <Text color={textColor}>copyright&copy; adyawinsa 2022</Text>
+            <Text color={textColor}>Copyright&copy; PT. Tesco Indomaritim 2024.</Text>
           </Box>
         </Box>
       ) : (

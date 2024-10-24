@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "ICT Ticketing System",
-    "short_name": "issue ict",
-    "description": "Web Aplikasi Issue ICT",
+    "name": "IT Ticketing System",
+    "short_name": "issue IT",
+    "description": "Web Aplikasi Issue IT",
     "icons": [
         {
             "src": "/icon-192x192.png",

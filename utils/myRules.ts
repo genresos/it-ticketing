@@ -18,16 +18,16 @@ interface Rules {
 }
 
 const rules: Rules = {
-  empId: {
-    required: "Emp Id tidak boleh kosong",
-    minLength: {
-      value: 8,
-      message: "Emp Id, panjang minimal 8 karakter!",
-    },
-    validate: (val: string) =>
-      val.includes("-") ||
-      "Employee Id must be in the correct format (example: 4826-0095)",
-  },
+  // empId: {
+  //   required: "ID tidak boleh kosong",
+  //   minLength: {
+  //     value: 2,
+  //     message: "ID, panjang minimal 2 karakter!",
+  //   },
+  //   validate: (val: string) =>
+  //     val.includes("-") ||
+  //     "Employee Id must be in the correct format (example: 4826-0095)",
+  // },
   fullName: {
     required: "Nama tidak boleh kosong",
     minLength: {

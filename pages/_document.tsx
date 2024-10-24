@@ -8,8 +8,8 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/icon.png"></link>
         <meta name="theme-color" content="#fff" />
       </Head>
-      <title>ICT Ticketing System</title>
-      <meta name="description" content="ICT Ticketing Sistem Web Admin" />
+      <title>IT Ticketing System</title>
+      <meta name="description" content="IT Ticketing Sistem Web Admin" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/adw-favicon.png" />
       <body>
