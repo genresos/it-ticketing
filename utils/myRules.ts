@@ -5,7 +5,7 @@ const validEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 const validUsername = /^[A-Za-z]+$/i;
 
 interface Rules {
-  empId: RegisterOptions;
+  // empId: RegisterOptions;
   fullName: RegisterOptions;
   firstName: RegisterOptions;
   lastName: RegisterOptions;
