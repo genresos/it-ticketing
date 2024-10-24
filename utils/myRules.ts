@@ -5,7 +5,7 @@ const validEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 const validUsername = /^[A-Za-z]+$/i;
 
 interface Rules {
-  // empId: RegisterOptions;
+  empId: RegisterOptions;
   fullName: RegisterOptions;
   firstName: RegisterOptions;
   lastName: RegisterOptions;
@@ -18,16 +18,13 @@ interface Rules {
 }
 
 const rules: Rules = {
-  // empId: {
-  //   required: "ID tidak boleh kosong",
-  //   minLength: {
-  //     value: 2,
-  //     message: "ID, panjang minimal 2 karakter!",
-  //   },
-  //   validate: (val: string) =>
-  //     val.includes("-") ||
-  //     "Employee Id must be in the correct format (example: 4826-0095)",
-  // },
+  empId: {
+    required: "ID tidak boleh kosong",
+    minLength: {
+      value: 2,
+      message: "ID, panjang minimal 2 karakter!",
+    }
+  },
   fullName: {
     required: "Nama tidak boleh kosong",
     minLength: {
