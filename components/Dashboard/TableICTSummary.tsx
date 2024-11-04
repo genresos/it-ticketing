@@ -31,7 +31,7 @@ export interface IssueTableListReduce {
   user: string;
   total_issue: number;
   DailyChecking: number;
-  eProject: number;
+  Requisition: number;
   GeneralRequest: number;
   HardwareInstallation: number;
   MonthlyPreventiveMaintenance: number;
@@ -128,7 +128,7 @@ const TableICTSummary = ({ data }: Props) => {
         footer: (props) => props.column.id,
       },
       {
-        accessorKey: "eProject",
+        accessorKey: "Requisition",
         header: () => "Eproj",
         cell: (info) => {
           return (

@@ -13,7 +13,7 @@ export interface PieChartData {
   DailyChecking: {
     total_issue: number;
   };
-  eProject: {
+  Requisition: {
     total_issue: number;
   };
   GeneralRequest: {
@@ -116,7 +116,7 @@ export interface IssueTableList {
       DailyChecking: number;
     },
     {
-      eProject: number;
+      Requisition: number;
     },
     {
       GeneralRequest: number;
