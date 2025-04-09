@@ -15,6 +15,8 @@ interface Rules {
   password: RegisterOptions;
   newPassword: (compare: string) =>  RegisterOptions;
   confirmPass: (compare: string) => RegisterOptions;
+  division_name: RegisterOptions;
+
 }
 
 const rules: Rules = {
