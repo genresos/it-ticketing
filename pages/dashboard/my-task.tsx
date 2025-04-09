@@ -176,12 +176,12 @@ const MyTask: NextPage<Props> = ({
         cell: (info) => <Text fontSize="sm">{info.getValue()}</Text>,
         footer: (props) => props.column.id,
       },
-      {
-        accessorKey: "project_code",
-        header: () => "Project Code",
-        cell: (info) => <Text fontSize="sm">{info.getValue()}</Text>,
-        footer: (props) => props.column.id,
-      },
+      // {
+      //   accessorKey: "project_code",
+      //   header: () => "Project Code",
+      //   cell: (info) => <Text fontSize="sm">{info.getValue()}</Text>,
+      //   footer: (props) => props.column.id,
+      // },
       {
         accessorKey: "status_id",
         header: () => "Status",
