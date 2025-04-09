@@ -50,7 +50,7 @@ const rules: Rules = {
       message: "Nama Belakang tidak sesuai!",
     },
   },
-  division: {
+  division_name: {
     required: "Divisi harus dipilih!",
   },
   email: {

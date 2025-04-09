@@ -54,7 +54,7 @@ const defaultValues: RegisterInputs = {
   email: "",
   password: "",
   confirmPass: "",
-  division: "",
+  division_name: "",
 };
 
 const defaultValuesCode: VerCodeInputs = {
@@ -94,7 +94,7 @@ const ModalVerCode = ({ visible, onClose, dataReg }: ModalVerCodeProps) => {
 
   const onSubmit: SubmitHandler<VerCodeInputs> = (dataSubmit) => {
     const { code } = dataSubmit;
-    const { emp_id, name, email, confirmPass, division } = dataReg;
+    const { emp_id, name, email, confirmPass, division_name } = dataReg;
 
     const dataRegister = {
       emp_id,
@@ -102,7 +102,7 @@ const ModalVerCode = ({ visible, onClose, dataReg }: ModalVerCodeProps) => {
       email,
       password: confirmPass!,
       code: Number(code),
-      division,
+      division_name,
 
     };
 
@@ -372,22 +372,22 @@ function SignUp() {
                         {errors.name?.message}
                       </FormErrorMessage>
                     </FormControl>
-                    <FormControl isInvalid={errors.division ? true : false} mb="24px">
+                    <FormControl isInvalid={errors.division_name ? true : false} mb="24px">
                       <FormLabel ms="4px" fontSize="sm" fontWeight="normal">
                         Division
                       </FormLabel>
                       <Select
-                        placeholder="Select division"
+                        placeholder="Select Division"
                         borderRadius="15px"
                         fontSize="sm"
                         size="lg"
-                        {...register("division", rules.division)}
+                        {...register("division_name", rules.division_name)}
                       >
                         <option value="Akunting">Akunting</option>
                         <option value="IT">IT</option>
                         <option value="Sales">Sales</option>
                       </Select>
-                      <FormErrorMessage>{errors.division?.message}</FormErrorMessage>
+                      <FormErrorMessage>{errors.division_name?.message}</FormErrorMessage>
                     </FormControl>
 
                     <FormControl
