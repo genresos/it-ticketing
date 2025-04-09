@@ -50,6 +50,9 @@ const rules: Rules = {
       message: "Nama Belakang tidak sesuai!",
     },
   },
+  division: {
+    required: "Divisi harus dipilih!",
+  },
   email: {
     required: "Email tidak boleh kosong",
     minLength: {

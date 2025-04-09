@@ -24,6 +24,7 @@ import {
   FormErrorMessage,
   InputGroup,
   InputRightElement,
+  Select,
 } from "@chakra-ui/react";
 import Card from "../../components/Card/Card";
 import { AxiosError } from "axios";
@@ -53,6 +54,7 @@ const defaultValues: RegisterInputs = {
   email: "",
   password: "",
   confirmPass: "",
+  division: "",
 };
 
 const defaultValuesCode: VerCodeInputs = {
@@ -92,7 +94,7 @@ const ModalVerCode = ({ visible, onClose, dataReg }: ModalVerCodeProps) => {
 
   const onSubmit: SubmitHandler<VerCodeInputs> = (dataSubmit) => {
     const { code } = dataSubmit;
-    const { emp_id, name, email, confirmPass } = dataReg;
+    const { emp_id, name, email, confirmPass, division } = dataReg;
 
     const dataRegister = {
       emp_id,
@@ -100,6 +102,8 @@ const ModalVerCode = ({ visible, onClose, dataReg }: ModalVerCodeProps) => {
       email,
       password: confirmPass!,
       code: Number(code),
+      division,
+
     };
 
     console.log("data submit", dataRegister);
@@ -368,6 +372,24 @@ function SignUp() {
                         {errors.name?.message}
                       </FormErrorMessage>
                     </FormControl>
+                    <FormControl isInvalid={errors.division ? true : false} mb="24px">
+                      <FormLabel ms="4px" fontSize="sm" fontWeight="normal">
+                        Division
+                      </FormLabel>
+                      <Select
+                        placeholder="Select division"
+                        borderRadius="15px"
+                        fontSize="sm"
+                        size="lg"
+                        {...register("division", rules.division)}
+                      >
+                        <option value="Akunting">Akunting</option>
+                        <option value="IT">IT</option>
+                        <option value="Sales">Sales</option>
+                      </Select>
+                      <FormErrorMessage>{errors.division?.message}</FormErrorMessage>
+                    </FormControl>
+
                     <FormControl
                       isInvalid={errors.email ? true : false}
                       mb="24px"

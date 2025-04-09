@@ -12,6 +12,7 @@ export interface RegisterInputs {
   password: string;
   confirmPass?: string;
   code?: number | string;
+  division: string;
 }
 
 export interface ForgotPassGetInputs {
