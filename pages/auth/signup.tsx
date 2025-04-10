@@ -103,7 +103,6 @@ const ModalVerCode = ({ visible, onClose, dataReg }: ModalVerCodeProps) => {
       password: confirmPass!,
       code: Number(code),
       division_name,
-
     };
 
     console.log("data submit", dataRegister);
@@ -372,7 +371,10 @@ function SignUp() {
                         {errors.name?.message}
                       </FormErrorMessage>
                     </FormControl>
-                    <FormControl isInvalid={errors.division_name ? true : false} mb="24px">
+                    <FormControl
+                      isInvalid={errors.division_name ? true : false}
+                      mb="24px"
+                    >
                       <FormLabel ms="4px" fontSize="sm" fontWeight="normal">
                         Division
                       </FormLabel>
@@ -383,11 +385,31 @@ function SignUp() {
                         size="lg"
                         {...register("division_name", rules.division_name)}
                       >
-                        <option value="Akunting">Akunting</option>
-                        <option value="IT">IT</option>
-                        <option value="Sales">Sales</option>
+                        <option value="ACCOUNTING">ACCOUNTING</option>
+                        <option value="DESIGN & ENGINEERING">
+                          DESIGN & ENGINEERING
+                        </option>
+                        <option value="FINANCE">FINANCE</option>
+                        <option value="GENERAL AFFAIR">GENERAL AFFAIR</option>
+                        <option value="HUMAN RESOURCES">HUMAN RESOURCES</option>
+                        <option value="INFORMATION TECHNOLOGY">
+                          INFORMATION TECHNOLOGY
+                        </option>
+                        <option value="INTERNAL AUDIT & SOP">
+                          INTERNAL AUDIT & SOP
+                        </option>
+                        <option value="INTERNAL CONTROL">
+                          INTERNAL CONTROL
+                        </option>
+                        <option value="PURCHASING">PURCHASING</option>
+                        <option value="SALES & MARKETING">
+                          SALES & MARKETING
+                        </option>
+                        <option value="TAX">TAX</option>
                       </Select>
-                      <FormErrorMessage>{errors.division_name?.message}</FormErrorMessage>
+                      <FormErrorMessage>
+                        {errors.division_name?.message}
+                      </FormErrorMessage>
                     </FormControl>
 
                     <FormControl
